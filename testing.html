@@ -1,0 +1,50 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+    date.toLocalDateString()
+    date.toLocalTimeString()
+<body>
+    <!-- <input type="text" id="one">
+    <button onclick="c()">Copy</button> 
+    <input type="text" id="two">
+    <button onclick="p()">Pasta</button> -->
+    <button onclick="m()">rtyuityu</button>
+    <p id="demo"></p>
+</body>
+<script>
+    // let me;
+    // function c() {
+    //     me = one.value
+    //     one.value = ''
+    // }
+    // function p() {
+    //     two.value = me
+    // }
+    // console.log(new date.toLocalDateString());
+    function m() {
+        //     const dt = new Date()
+        // const date = dt.toDateString("en-us", {month: "long", day: "numeric", year: "numeric"})const a = new Date()
+        // const b = a.getHours
+
+        //     console.log(date);
+
+        // const se = dd.getMinutes
+        setInterval(() => {
+            let a = new Date()
+            let b = a.getHours()
+            let c = a.getMinutes()
+            let d = a.getSeconds()
+            demo.innerHTML = `${b}:${c}:${d}`
+            // console.log(d);
+        }, 1000);
+    }
+</script>
+
+</html>

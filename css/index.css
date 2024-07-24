@@ -1,0 +1,258 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+h1 {
+  background-color: palevioletred;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  font-size: 35px;
+}
+
+.box {
+  width: 100%;
+  height: 60vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+.box .first {
+  width: 90%;
+  height: 340px;
+  margin-left: 6%;
+  margin-top: 20px;
+  box-shadow: 0px 1px 12px 0px rgb(88, 88, 88);
+  border-radius: 10px;
+}
+.box .first h2 {
+  margin: 12px;
+  font-size: 20px;
+  font-weight: 800;
+  font-family: "Times New Roman", Times, serif;
+}
+.box .first select {
+  margin-left: 11px;
+  padding: 9px;
+  border-radius: 7px;
+  width: 95%;
+}
+.box .first .hold {
+  border: thin solid black;
+  width: 95%;
+  margin: auto;
+  border-radius: 7px;
+  padding: 0px;
+  position: relative;
+}
+.box .first .hold input {
+  border: none;
+  width: 95%;
+  margin-left: 0px;
+  margin-top: -2px;
+}
+.box .first .hold #copy {
+  position: absolute;
+  top: 9px;
+  right: 8px;
+  color: black;
+}
+.box .first input {
+  margin-left: 11px;
+  padding: 11px;
+  border-radius: 7px;
+  width: 95%;
+  border: 1px solid rgba(0, 0, 0, 0.7176470588);
+}
+.box .first button {
+  margin-left: 11px;
+  padding: 10px;
+  border-radius: 5px;
+  width: 95%;
+  border: 1px solid palevioletred;
+  margin-top: 20px;
+  background-color: palevioletred;
+  color: white;
+  font-size: 18px;
+}
+.box .second {
+  width: 90%;
+  height: 340px;
+  margin-left: 4%;
+  margin-top: 20px;
+  box-shadow: 0px 1px 12px 0px rgb(88, 88, 88);
+  border-radius: 10px;
+}
+.box h3 {
+  margin-top: 10px;
+  margin-left: 13px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.box .hold2 {
+  border: thin solid black;
+  width: 95%;
+  margin: auto;
+  border-radius: 7px;
+  position: relative;
+  margin-top: 10px;
+}
+.box .hold2 input {
+  border: none;
+  width: 95%;
+  margin-left: 3px;
+  padding: 11px;
+}
+.box .hold2 #pasta {
+  position: absolute;
+  top: 10px;
+  right: 8px;
+  color: black;
+}
+.box button {
+  margin-top: 18px;
+  margin-left: 2%;
+  padding: 10px;
+  width: 95%;
+  background-color: palevioletred;
+  border: thin solid palevioletred;
+  border-radius: 6px;
+  color: white;
+  font-size: 18px;
+}
+
+table {
+  width: 100%;
+  margin-top: 30px;
+}
+table th {
+  background-color: black;
+  color: red;
+  padding: 9px;
+}
+
+.popup {
+  border: thin solid black;
+  width: 30%;
+  margin: 100px auto;
+  background-color: black;
+  border-radius: 10px;
+  position: absolute;
+  top: 20%;
+  left: 34%;
+  display: none;
+  animation: up 1s linear;
+}
+.popup h2 {
+  text-align: center;
+  margin-top: 20px;
+  color: white;
+}
+.popup button {
+  padding: 10px 30px 10px 30px;
+  margin-left: 40%;
+  background-color: palevioletred;
+  border: thin solid palevioletred;
+  margin-top: 15px;
+}
+
+.popup2 {
+  border: thin solid black;
+  width: 30%;
+  height: 20vh;
+  margin: 100px auto;
+  background-color: black;
+  border-radius: 10px;
+  position: absolute;
+  top: 20%;
+  left: 34%;
+  display: none;
+  animation: up 1s linear;
+}
+.popup2 h2 {
+  text-align: center;
+  margin-top: 20px;
+  color: white;
+}
+.popup2 button {
+  padding: 10px;
+  margin-left: 6%;
+  background-color: palevioletred;
+  border: thin solid palevioletred;
+}
+
+#delete {
+  background-color: red;
+  padding: 7px;
+  color: white;
+  border: thin solid red;
+}
+
+@keyframes up {
+  from {
+    transform: scale(0.7);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@media (max-width: 860px) {
+  .popup {
+    width: 35%;
+    left: 31%;
+  }
+  .popup h2 {
+    font-size: 18px;
+  }
+  .popup button {
+    margin-left: 35%;
+  }
+}
+@media (max-width: 679px) {
+  h1 {
+    font-size: 25px;
+  }
+  table th {
+    padding: 1px;
+  }
+  table td {
+    font-size: 15px;
+  }
+}
+@media (max-width: 594px) {
+  .box {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .box .second {
+    margin-left: 6%;
+  }
+  table {
+    margin-top: 400px;
+  }
+  table th {
+    background-color: palevioletred;
+    padding: 0px;
+    font-size: 13px;
+    font-weight: bolder;
+    color: white;
+  }
+  table td {
+    font-size: 10px;
+    font-weight: bolder;
+  }
+  #delete {
+    padding: 2px;
+  }
+}
+@media (max-width: 422px) {
+  .box .first {
+    width: 95%;
+    margin-left: 3%;
+  }
+  .box .second {
+    width: 95%;
+    margin-left: 3%;
+  }
+}

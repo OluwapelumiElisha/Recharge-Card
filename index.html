@@ -1,0 +1,93 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recharge Card</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Header  -->
+    <h1>Recharge Card.</h1>
+    <!-- END OF HEADER  -->
+
+
+    <!-- SECTION  -->
+    <!-- THE FIRST BOX -->
+    <div class="box">
+        <div class="first">
+            <h2>Choose Network</h2>
+            <select name="" id="network" onchange="Network()">
+                <option value="--Select Network--">--Select Network--</option>
+                <option value="GLO">GLO</option>
+                <option value="MTN">MTN</option>
+                <option value="AIRTEL">AIRTEL</option>
+                <option value="9 Mobile">9 Mobile</option>
+            </select>
+            <h2>Select Amount</h2>
+            <select name="" id="amount" onchange="Network()">
+                <option value="--Select Amount--">--Select Amount--</option>
+                <option value="100">100</option>
+                <option value="200">200</option>
+                <option value="500">500</option>
+                <option value="1000">1000</option>
+            </select>
+            <h2>Generate Pin</h2>
+            <div class="hold">
+                <input type="text" disabled placeholder="Generate Pin" id="inputran">
+                <i class="fa-solid fa-copy" id="copy" onclick="copypin()"></i>
+            </div>
+            
+            <button onclick="handleRecharge()">Generate Pin</button>
+        </div>
+        
+        <!-- THE SECOND BOX  -->
+
+
+        <div class="second">
+            <h3>Insert Pin Below</h3>
+            <div class="hold2">
+                <input type="text" placeholder="Pin" id="rechargenow"> 
+                <i class="fa-solid fa-paste" id="pasta" onclick="pastapin()"></i>
+            </div>
+            
+            <button onclick="handleRechargeCard()">Recharge Card</button>  
+        </div>
+    </div> <br> <br>
+    <!-- SECTION END  -->
+    <!-- TABLE SECTION  -->
+    <table style="text-align: center;">
+        <thead>
+            <tr>
+                <th>S/N</th>
+                <th>Network</th>
+                <th>Date</th>
+                <th>Amount</th>
+                <th>Time</th>
+                <th>PrintRef</th>
+                <th>Status</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody id="show">
+
+        </tbody>
+    </table>
+        <!-- END OF TABLE SECTION  -->
+
+        <!-- POP UP SECTION  -->
+    <div class="popup" id="popup">
+        <h2 id="demo"></h2>
+        <button onclick="ok()">OK</button> <br> <br>
+    </div>
+    <div class="popup2" id="popup2">
+        <h2>Please Select Amount !!!</h2>
+        <button onclick="ok()">OK</button>
+    </div>
+    
+    
+     
+    <!-- END OF POP UP SECTION  -->
+</body>
+    <script src="/index.js"></script>
+</html>
